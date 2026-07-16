@@ -9,6 +9,8 @@ if [ $USERID -ne 0 ]
 then
     echo "error:: please run the cmd with root access"
     exit 1
+#else 
+    #echp "the instalation is sucess"
 fi
 
 #it is our responsibility to check installation is success or not
