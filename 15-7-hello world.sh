@@ -2,8 +2,11 @@
 
 
 echo "hi this Jayendra, i am learning devop+AWS from the past 3 weeks."
-echo "jay: hi ra!, cat"
-echo "cat: meow!"
-echo "jay:"how it's going "
-echo "cat:"meow,meoww"
-echo "jay: dandam ra dutha"
+
+person1=jay
+person2=hari
+echo "$person1: hi ra!, cat"
+echo "$person2: meow!"
+echo "$person1: how it's going "
+echo "$person2: meow,meoww"
+echo "$person1: dandam ra dutha"
