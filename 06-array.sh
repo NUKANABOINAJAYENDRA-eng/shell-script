@@ -2,7 +2,7 @@
 
 #arry can hold the multiple values in it
 
-PERSONS=("JAYENDRA","RAMESH", "SURESH")
+PERSONS=("JAYENDRA", "RAMESH", "SURESH")
 #ARRAY starts the index value from 0
 
 echo "First person is: ${PERSONS[0]}"
