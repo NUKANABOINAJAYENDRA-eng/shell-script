@@ -19,5 +19,5 @@ then
     echo "the installion is a failure"
     eixt 1
 else 
-    else "installation is success"
+    echo  "the installion is success"
 fi
