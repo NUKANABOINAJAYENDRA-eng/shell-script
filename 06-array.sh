@@ -7,3 +7,6 @@ PERSONS=("JAYENDRA", "RAMESH", "SURESH")
 
 echo "First person is: ${PERSONS[0]}"
 #to get the required person from array
+
+echo "First person is: ${PERSONS[@]}"
+#here @ means all the persons in the array
