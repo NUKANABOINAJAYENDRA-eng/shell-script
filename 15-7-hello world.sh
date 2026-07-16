@@ -3,7 +3,7 @@
 
 echo "hi this Jayendra, i am learning devop+AWS from the past 3 weeks."
 
-person1=jay
+person1=jaye
 person2=hari
 echo "$person1: hi ra!, cat"
 echo "$person2: meow!"
