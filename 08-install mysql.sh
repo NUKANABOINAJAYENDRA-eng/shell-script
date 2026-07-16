@@ -21,3 +21,15 @@ then
 else 
     echo  "the installion is success"
 fi
+
+
+#installing postfix
+yum install postfix -y
+
+if [ $? -ne 0 ]
+then 
+    echo "the installion is a failure"
+    eixt 1
+else 
+    echo  "the installion is success"
+fi
