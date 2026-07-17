@@ -28,15 +28,8 @@ then
     exit 1
 fi
 
-PACKAGES=("git, nginx, postfix, tomcat, mysql")
 
-for i in "${PACKAGES[@]}"
-do 
-    if rpm -q "$PACKAGES" &>>$LOGFILES
-    then 
-        echo "$PACKAGES is already installed"
-    else
-        echo "$PACKAGES is installing"
-    fi
-done 
-
+for i in $@
+do
+    yum install $i -y
+done
