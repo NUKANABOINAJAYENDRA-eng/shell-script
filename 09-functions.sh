@@ -40,9 +40,9 @@ fi
 #it is our responsibility to check installation is success or not
 yum install mysql -y &>>$LOGFILE
 
-VALIDATE $? "$G Installing mysql $N"
+VALIDATE $? "Installing mysql"
 
 #installing postfix
 yum install postfix -y &>>$LOGFILE
 
-VALIDATE $? "$G installing postfix $N"
+VALIDATE $? "installing postfix"
