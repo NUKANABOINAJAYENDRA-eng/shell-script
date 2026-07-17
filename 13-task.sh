@@ -35,7 +35,7 @@ do
     then
         echo -e " $G $@ is already installed $N "
     else
-        yum install $i -y
+        yum install $i -y  &>>$LOGFILE
     fi
 
 done
