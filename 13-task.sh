@@ -31,7 +31,7 @@ fi
 
 for i in $@
 do
-    if $i yum installed
+    if $i installed
     then
         echo " $Y $@ is already installed $N "
     else
