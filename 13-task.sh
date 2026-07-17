@@ -33,7 +33,7 @@ for i in $@
 do
     if $i installed
     then
-        echo -e " $Y $@ is already installed $N "
+        echo -e " $G $@ is already installed $N "
     else
         yum install $i -y
     fi
