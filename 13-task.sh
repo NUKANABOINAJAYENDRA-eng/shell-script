@@ -24,7 +24,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then 
-    echo "error:: the instalation is a failure"
+    echo -e " $R error:: the instalation is a failure"
     exit 1
 fi
 
