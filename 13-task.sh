@@ -14,9 +14,9 @@ Y="\e[33m"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e " $R $2.... FAILURE $N"
+        echo -e " installing $2....$R FAILURE $N"
     else
-        echo -e " $y $2... SUCCESS $N"
+        echo -e " installing $2... $Y SUCCESS $N"
     fi
 }
 
@@ -31,11 +31,13 @@ fi
 
 for i in $@
 do
-    if $i installed
+    yum list installed $i  &>>LOGFILES
+    if [ $? -ne 0 ]
     then
-        echo -e " $G $@ is already installed $N "
+        echo " $i is not installed, just go and install it"
+        yum install $i -y  &>>$LOGFILES
     else
-        yum install $i -y  &>>$LOGFILE
+        echo -e "$Y $i is already installed $N"
     fi
 
 done
