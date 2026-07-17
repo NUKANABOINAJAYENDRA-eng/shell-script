@@ -24,7 +24,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then 
-    echo -e " $R error:: the instalation is a failure"
+    echo -e " $R error:: please run with root access $N"
     exit 1
 fi
 
