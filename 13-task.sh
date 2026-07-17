@@ -31,5 +31,11 @@ fi
 
 for i in $@
 do
-    yum install $i -y
+    if $i yum installed
+    then
+        echo " $Y $@ is already installed $N "
+    else
+        yum install $i -y
+    fi
+
 done
