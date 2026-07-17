@@ -3,5 +3,5 @@
 
 for i in $@
 do
-    yum install $i
+    yum install $i -y
 done
