@@ -11,7 +11,7 @@ N="\e[0m"
 Y="\e[33m"
 
 DISK_USEAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
-DISK_USEAGE_THRESHOLD=5
+DISK_USEAGE_THRESHOLD=1
 
 #IFS - Internal file seperator in space
 while IFS= read line 
