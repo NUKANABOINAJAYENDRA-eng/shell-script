@@ -31,4 +31,4 @@ do
 
 done <<< $DISK_USEAGE
 
-echo "message: $message"
+echo -e "message: $message"
