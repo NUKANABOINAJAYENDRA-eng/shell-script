@@ -31,4 +31,6 @@ do
 
 done <<< $DISK_USEAGE
 
-echo -e "message: $message"
+#echo -e "message: $message"  (display alert message on a terminal)
+
+echo "$message" | mail -s "HIGH DISK USAGE" nukanaboinajayendra5@gmail.com
