@@ -12,14 +12,14 @@ Y="\e[33m"
 
 DISK_USEAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USEAGE_THRESHOLD=1
-#message=
+message=
 #IFS - Internal file seperator in space
 while IFS= read line 
 do
     #echo "output: $line"
 
     #this cmd will give usage in number (instead of %)
-    usage=$(echo $line | awk '{print $1}' | cut -d % -f1)
+    usage=$(echo $line | awk '{print $6}' | cut -d % -f1)
 
     #this cmd will giev us partition
     partition=$(echo $line | awk '{print $1}')
